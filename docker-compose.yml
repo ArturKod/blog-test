@@ -29,6 +29,9 @@ services:
       - "3307:3306"
     volumes:
       - db_data:/var/lib/mysql
+      - ./docker/mysql/my.cnf:/etc/mysql/conf.d/my.cnf
+      - ./sql/schema.sql:/docker-entrypoint-initdb.d/1_schema.sql
+      - ./sql/seeder.sql:/docker-entrypoint-initdb.d/2_seeder.sql
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
