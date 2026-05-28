@@ -1,0 +1,15 @@
+/vendor/
+composer.lock
+
+/templates_c/
+/cache/
+
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+docker/db_data/
+
+.env
+.env.local
