@@ -44,6 +44,17 @@
     phpMyAdmin: http://localhost:8085
     Сервер: db, Логин: bloguser, Пароль: secret
 
+**Структура SCSS**
+    scss/_variables.scss – переменные цветов, отступов
+
+    scss/_mixins.scss – миксины для карточек, контейнеров
+
+    scss/main.scss – основные стили и адаптив
+
+**После изменения SCSS запустите компиляцию:**
+```bash
+    docker-compose exec php php bin/compile-scss.php
+
 **Остановка**
     bash
     docker-compose down
